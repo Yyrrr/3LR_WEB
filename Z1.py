@@ -1,10 +1,10 @@
 import numpy # удобная библиотека для сравнения
-from copy import deepcopy # для копирования
+import copy  # для копирования
 
 
 class Matrix:
     def __init__(self, znachenie):#конструктор
-        self.matrix = deepcopy(znachenie)
+        self.matrix = copy.deepcopy(znachenie)
 
     def __str__(self):# Печать
         strc = ''
